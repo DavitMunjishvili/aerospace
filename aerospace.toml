@@ -166,32 +166,7 @@ down = 'volume down'
 up = 'volume up'
 shift-down = ['volume set 0', 'mode main']
 
-# move my apps to default workspaces
-
-# - telegram -
-[[on-window-detected]]
-if.app-id = "com.tdesktop.Telegram"
-run = "move-node-to-workspace 9"
-
-# - slack -
-[[on-window-detected]]
-if.app-id = "com.tinyspeck.slackmacgap"
-run = "move-node-to-workspace 9"
-
-# - zen browser -
-[[on-window-detected]]
-if.app-id = "org.mozilla.com.zen.browser"
-run = "move-node-to-workspace 1"
-
-# - arc browser -
-[[on-window-detected]]
-if.app-id = "company.thebrowser.Browser"
-run = "move-node-to-workspace 1"
-
 # # Ghostty config
 [[on-window-detected]]
 if.app-id = "com.mitchellh.ghostty"
-run = [
-  "layout floating",
-  # "move-node-to-workspace 2"
-]
+run = ["layout floating"]
